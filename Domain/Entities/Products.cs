@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using Core.Exceptions;
+using Domain.Validators;
 
 namespace Domain.Entities
 {
@@ -70,7 +72,7 @@ namespace Domain.Entities
             {
                 foreach (var error in validation.Errors)
                     _errors.Add(error.ErrorMessage);
-                //throw new DomainException("Alguns campos estão inválidos, por favor corrigir", _errors);
+                throw new DomainException("Alguns campos estão inválidos, por favor corrigir", _errors);
             }
             return true;
         }
