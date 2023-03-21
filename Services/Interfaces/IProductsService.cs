@@ -8,7 +8,7 @@ using Services.DTO_s;
 
 namespace Services.Interfaces
 {
-    internal interface IProductsService
+    public interface IProductsService
     {
         Task<ProductsDto> Create(ProductsDto productsDto);
         Task<ProductsDto> Update(ProductsDto productsDto);
