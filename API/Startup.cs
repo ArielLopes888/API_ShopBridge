@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using API.Token;
+using API.ViewModels;
 
 namespace API
 {
@@ -60,7 +61,9 @@ namespace API
             var autoMapperConfig = new MapperConfiguration(cfg =>
             {
                 cfg.CreateMap<Products, ProductsDto>().ReverseMap();
-       
+                cfg.CreateMap<CreateProductsViewModel, ProductsDto>().ReverseMap();
+                cfg.CreateMap<UpdateProductsViewModel, ProductsDto>().ReverseMap();
+
             });
 
             services.AddSingleton(autoMapperConfig.CreateMapper());
