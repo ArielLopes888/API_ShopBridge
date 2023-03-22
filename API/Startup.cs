@@ -72,7 +72,7 @@ namespace API
 
             #region Database
             services.AddDbContext<ShopBridgeContext>(options => options
-                .UseSqlServer(Configuration["ConnectionStrings:API.ShopBridge"])
+                .UseSqlServer(Configuration["ConnectionStrings:shopbridge"])
                 .EnableSensitiveDataLogging()
                 .UseLoggerFactory(LoggerFactory.Create(builder => builder.AddConsole())),
             ServiceLifetime.Transient);

@@ -15,8 +15,10 @@ namespace Infra.Context
         public virtual DbSet<Products> Products { get; set;}
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-            => optionsBuilder.UseSqlServer();
+        {
+            optionsBuilder.UseSqlServer();
 
+        }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.ApplyConfiguration(new ProductMap()); 

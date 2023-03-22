@@ -14,13 +14,13 @@ namespace Infra.Migrations
                 name: "Products",
                 columns: table => new
                 {
-                    Id = table.Column<long>(type: "bigint", nullable: false)
+                    Id = table.Column<long>(type: "BIGINT", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Category = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Name = table.Column<string>(type: "VARCHAR(80)", maxLength: 80, nullable: false),
+                    description = table.Column<string>(type: "VARCHAR(180)", maxLength: 180, nullable: false),
+                    price = table.Column<decimal>(type: "decimal(18,2)", maxLength: 18, nullable: false),
+                    imageUrl = table.Column<string>(type: "VARCHAR(180)", maxLength: 180, nullable: false),
+                    category = table.Column<string>(type: "VARCHAR(180)", maxLength: 180, nullable: false)
                 },
                 constraints: table =>
                 {
