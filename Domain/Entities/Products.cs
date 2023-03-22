@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
-using Domain.Exceptions;
+﻿using Domain.Exceptions;
 using Domain.Validators;
 
 namespace Domain.Entities
@@ -31,38 +25,9 @@ namespace Domain.Entities
           
             _errors = new List<string>();
 
-            Validate();
+            Validate();  //checks if the values ​​are valid according to the rules defined in the ProductsValidator class
         }
 
-        public void ChangeName(string name)
-        {
-            Name = name;
-            Validate();
-        }
-
-        public void ChangeDescription(string description)
-        {
-            Description = description;
-            Validate();
-        }
-
-        public void Changeprice(decimal price)
-        {
-            Price = price;
-            Validate();
-        }
-
-        public void ChangeImageUrl(string imageUrl)
-        {
-            ImageUrl = imageUrl;
-            Validate();
-        }
-
-        public void ChangeCategory(string category)
-        {
-            Category = category;
-            Validate();
-        }
         public override bool Validate()
         {
             var validator = new ProductsValidator();

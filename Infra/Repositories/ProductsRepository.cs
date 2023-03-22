@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infra.Repositories
 {
+    /*class responsible for accessing and manipulating the data of the Products entity in the database, through the use of the Entity Framework Core.*/
     public class ProductsRepository : BaseRepository<Products>, IProductsRepository
     {
         private readonly ShopBridgeContext _context;

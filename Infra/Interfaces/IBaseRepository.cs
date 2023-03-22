@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 using Domain.Entities;
 
 namespace Infra.Interfaces
-{
+{ 
+    /*generic interface that defines a set of methods to be implemented by other classes*/
     public interface IBaseRepository<T> where T : Base
     {
         Task<T> Create(T obj);

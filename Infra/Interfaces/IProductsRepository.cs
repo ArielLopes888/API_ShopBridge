@@ -14,3 +14,6 @@ namespace Infra.Interfaces
 
     }
 }
+
+/*interface that inherits from Base and defines a contract for a repository 
+ that must implement basic CRUD operations (Create, Read, Update and Delete),*/

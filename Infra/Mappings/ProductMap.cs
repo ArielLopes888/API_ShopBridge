@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Infra.Mappings
 {
+    /*It will define how the "Products" entity will be mapped in the database, using the Entity Framework Core.*/
     public class ProductMap : IEntityTypeConfiguration<Products>
     {
         public void Configure(EntityTypeBuilder<Products> builder)

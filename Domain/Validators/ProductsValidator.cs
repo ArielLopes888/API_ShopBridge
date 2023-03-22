@@ -4,6 +4,8 @@ using FluentValidation;
 
 namespace Domain.Validators
 {
+    /*the ProductsValidator class is a validator class for the Products class,
+    which defines validation rules for the properties of the Products class using the FluentValidation library*/
     public class ProductsValidator : AbstractValidator<Products>
     {
         public ProductsValidator()

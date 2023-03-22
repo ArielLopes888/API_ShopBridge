@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Domain.Entities;
+﻿using Domain.Entities;
+using Infra.Mappings;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infra.Context
@@ -23,7 +19,8 @@ namespace Infra.Context
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            //builder.ApplyConfiguration(new UserMap());
+            builder.ApplyConfiguration(new ProductMap()); 
+            //the ApplyConfiguration() method is used to apply the configuration of the ProductMap class which contains the mapping of the Product entity to the Products table.
         }
 
     }

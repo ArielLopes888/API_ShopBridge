@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Domain.Entities;
+﻿using Domain.Entities;
 using Infra.Context;
 using Infra.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infra.Repositories
 {
+    /*Generic implementation of base repository that is used for application data access.*/
     public class BaseRepository<T> : IBaseRepository<T> where T : Base
     {
         private readonly ShopBridgeContext _context;

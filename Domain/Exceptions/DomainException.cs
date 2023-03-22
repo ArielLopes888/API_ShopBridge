@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace Domain.Exceptions
 {
+    //DomainException is a custom exception class that inherits from the Exception class and has a list of errors as a public property.
+    //This class is used to represent Domain layer specific exceptions.
     public class DomainException : Exception
     {
         internal List<string> _errors;

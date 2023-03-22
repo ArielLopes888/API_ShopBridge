@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infra.Migrations
 {
     [DbContext(typeof(ShopBridgeContext))]
-    [Migration("20230322133024_ShopBridge")]
+    [Migration("20230322141644_ShopBridge")]
     partial class ShopBridge
     {
         /// <inheritdoc />

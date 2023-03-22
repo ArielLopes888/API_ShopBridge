@@ -5,6 +5,7 @@ using System.Text;
 
 namespace API.Token
 {
+    //JWT token generator
     public class TokenGenerator : ITokenGenerator
     {
         private readonly IConfiguration _configuration;
