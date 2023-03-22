@@ -65,7 +65,13 @@ namespace Domain.Validators
                .WithMessage("The Category cannot be empty")
 
                .NotNull()
-               .WithMessage("The Category cannot be null");
+               .WithMessage("The Category cannot be null")
+
+               .MinimumLength(3)
+                .WithMessage("The Category must be at least 3 characters long.")
+
+                .MaximumLength(80)
+                .WithMessage("The Category must be a maximum of 80 characters.");
         }
     }
 }
