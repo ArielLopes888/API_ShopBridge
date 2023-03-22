@@ -1,7 +1,7 @@
 ﻿using API.Utilities;
 using API.ViewModels;
 using AutoMapper;
-using Core.Exceptions;
+using Domain.Exceptions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Services.DTO_s;

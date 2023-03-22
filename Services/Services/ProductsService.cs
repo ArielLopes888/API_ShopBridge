@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
-using Core.Exceptions;
+using Domain.Exceptions;
 using Domain.Entities;
 using Infra.Interfaces;
 using Services.DTO_s;

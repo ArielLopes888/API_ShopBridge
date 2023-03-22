@@ -17,7 +17,7 @@ namespace API.ViewModels
 
 
         [Required(ErrorMessage = "The price cannot be empty")]
-        public string Price { get; set; }
+        public decimal Price { get; set; }
 
 
         [Required(ErrorMessage = "The Image cannot be empty")]
