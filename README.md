@@ -27,3 +27,5 @@ Be sure to replace "<path to project>" with the relative or absolute path to you
 The API will now be running locally on your computer. You can access it in your browser or an API testing tool using the address: http://localhost:5000.
 
 To stop the API from running, just press Ctrl + C in the terminal or command prompt where the API is running.
+You will need to add a connectionstring and set password and login to generate Jwt Token.
+To test the API online at the following link: https://shopbridgeapi.azurewebsites.net/swagger , you can ask the API developer for login and password
